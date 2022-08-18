@@ -7,6 +7,7 @@ import "./App.css";
 
 function App() {
   const [person, setPerson] = useState("");
+  const [result, setResult] = useState([]);
 
   if (person) console.log(person);
   return (
@@ -17,7 +18,10 @@ function App() {
             path="/"
             element={<EntryName person={person} setPerson={setPerson} />}
           />
-          <Route path="/mcq" element={<MCQ />} />
+          <Route
+            path="/mcq"
+            element={<MCQ result={result} setResult={setResult} />}
+          />
         </Routes>
       </BrowserRouter>
     </>
