@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EntryName = () => {
   return (
     <div className="name-container">
       <input placeholder="Name" className="nameinput" />
-      <button className="btn"> Submit </button>
+      <Link to="/mcq" className="btn text-center">
+        Submit
+      </Link>
     </div>
   );
 };

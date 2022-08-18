@@ -37,7 +37,7 @@ code {
 }
 
 .display-container {
-  @apply w-2/4 h-2/3 bg-green-300 flex flex-col justify-between;
+  @apply w-4/5 h-auto bg-green-300 flex flex-col justify-between;
 }
 
 .button-container {
