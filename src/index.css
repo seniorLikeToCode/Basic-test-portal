@@ -41,9 +41,42 @@ code {
 }
 
 .button-container {
-  @apply flex justify-between;
+  @apply flex justify-between mt-4;
 }
 
 .main-container {
   @apply bg-green-600;
+}
+
+:root {
+  --form-control-color: rgb(22 101 52);
+}
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+input[type="radio"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
 }

@@ -30,8 +30,10 @@ const MCQ = () => {
                   key={index}
                   className="flex justify-center gap-2 items-center text-2xl"
                 >
-                  <input type="checkbox"/>
-                  <label>{ans}</label>
+                  <label class="form-control">
+                    <input type="radio" name="radio" />
+                    {ans}
+                  </label>
                 </div>
               );
             })}

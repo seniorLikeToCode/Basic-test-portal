@@ -70,13 +70,8 @@ export const data = [
   {
     id: 7,
     question:
-      "By default, links are displayed with an underline. How can you remove the underline from all links using CSS code?",
-    answer: [
-      "a {text: no-underline;}",
-      "a {text-decoration:none;}",
-      "a {text-style: no-underline;}",
-      "a {text-decoration: no-underline;}",
-    ],
+      "What keyword is used to check whether a given property is valid or not?",
+    answer: ["in", "is in", "exists", "lies"],
     correct: "c",
   },
   {
