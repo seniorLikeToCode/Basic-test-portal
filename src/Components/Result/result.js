@@ -2,12 +2,15 @@ import React from "react";
 import { data } from "../../data";
 
 const ResultPage = (result) => {
-  console.log(result);
-  let temp = [];
-  for (let i = 0; i < data.length; i++) temp.push(data[i].correct);
-  console.log(temp);
-  let right = 0,    
-    att = 0;
+  let temp = result.result
+  let right = 0;
+  let att = 0;
+
+  for (let i = 0; i < data.length; i++) {
+    if (temp[i] === null) continue;
+    if (temp[i]) att++;
+    if (data[i].correct === temp[i]) right++;
+  }
 
   return (
     <>

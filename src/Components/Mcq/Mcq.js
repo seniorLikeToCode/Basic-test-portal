@@ -23,7 +23,6 @@ const MCQ = ({ result, setResult }) => {
     let newResult = [...result];
     newResult[id] = value;
     setResult(newResult);
-    console.log(newResult);
   };
 
   return (

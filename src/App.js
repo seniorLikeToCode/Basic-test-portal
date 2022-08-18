@@ -11,7 +11,6 @@ function App() {
   const resultInialize = Array(data.length).fill(null);
   const [person, setPerson] = useState("");
   const [result, setResult] = useState(resultInialize);
- 
   return (
     <>
       <BrowserRouter>
