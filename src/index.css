@@ -80,3 +80,9 @@ input[type="radio"]::before {
 input[type="radio"]:checked::before {
   transform: scale(1);
 }
+
+.btn2 {
+  @apply bg-black text-green-700 h-8 
+  w-44 text-lg hover:border-2 hover:border-black 
+  hover:bg-green-300 hover:text-black mt-6;
+}

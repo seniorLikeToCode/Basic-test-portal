@@ -4,7 +4,7 @@ export const data = [
     question:
       "Which of the following selectors selects the checkboxes that is checked or enabled?",
     answer: ["E ~ F", "::after", ":checked", "None of the above"],
-    correct: "C",
+    correct: 2,
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ export const data = [
       "<ul>…</ul>",
       "<ol>…</ol>",
     ],
-    correct: "C",
+    correct: 2,
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const data = [
       "Both A and B are true",
       "the domain name as physcial address (MAC)",
     ],
-    correct: "A",
+    correct: 0,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const data = [
       "<a href = “https://stackhowto.com” target = “#blank”>Click Here</a>",
       "<a href = “https://stackhowto.com” target = “@blank”>Click Here</a>",
     ],
-    correct: "B",
+    correct: 1,
   },
   {
     id: 4,
@@ -48,13 +48,13 @@ export const data = [
       "<background = “test.jpg”>",
       "<background image = “test.jpg”>",
     ],
-    correct: "A",
+    correct: 0,
   },
   {
     id: 5,
     question: "The first page of a website is called _____.",
     answer: ["Design page", "Home page", "Front page", "Main page"],
-    correct: "B",
+    correct: 1,
   },
   {
     id: 6,
@@ -65,14 +65,14 @@ export const data = [
       "Including CSS and JS files",
       "All the answers are true",
     ],
-    correct: "D",
+    correct: 3,
   },
   {
     id: 7,
     question:
       "What keyword is used to check whether a given property is valid or not?",
     answer: ["in", "is in", "exists", "lies"],
-    correct: "c",
+    correct: 2,
   },
   {
     id: 8,
@@ -83,7 +83,7 @@ export const data = [
       "<{body:color=black(body}",
       "Body {color: Black}",
     ],
-    correct: "D",
+    correct: 3,
   },
   {
     id: 9,
@@ -95,6 +95,6 @@ export const data = [
       "E[attr*=value]",
       "None of the above",
     ],
-    correct: "B",
+    correct: 1,
   },
 ];

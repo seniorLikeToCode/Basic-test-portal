@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import uuid from "react-uuid";
 import { data } from "../../data";
+import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const MCQ = () => {
+const MCQ = ({ result, setResult }) => {
   const [index, setIndex] = useState(0);
   const { id, question, answer } = data[index];
 
@@ -16,6 +18,14 @@ const MCQ = () => {
     else setIndex(0);
   };
 
+  const handlerChange = (e) => {
+    const value = parseInt(e.target.value);
+    let newResult = [...result];
+    newResult[id] = value;
+    setResult(newResult);
+    console.log(newResult);
+  };
+
   return (
     <div className="main-container">
       <div className="display-container p-6">
@@ -27,11 +37,16 @@ const MCQ = () => {
             {answer.map((ans, index) => {
               return (
                 <div
-                  key={index}
+                  key={uuid()}
                   className="flex justify-center gap-2 items-center text-2xl"
                 >
-                  <label class="form-control">
-                    <input type="radio" name="radio" />
+                  <label className="form-control">
+                    <input
+                      type="radio"
+                      value={index}
+                      checked={result[id] === index}
+                      onChange={handlerChange}
+                    />
                     {ans}
                   </label>
                 </div>
@@ -54,6 +69,10 @@ const MCQ = () => {
           </button>
         </div>
       </div>
+      <Link to="/result" className="btn2 text-center">
+        {" "}
+        Submit
+      </Link>
     </div>
   );
 };
