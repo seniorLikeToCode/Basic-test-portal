@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { data } from "../../data";
 
 const ResultPage = (result) => {
@@ -6,7 +6,7 @@ const ResultPage = (result) => {
   let temp = [];
   for (let i = 0; i < data.length; i++) temp.push(data[i].correct);
   console.log(temp);
-  let right = 0,
+  let right = 0,    
     att = 0;
 
   return (
