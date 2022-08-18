@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { data } from "../../data";
-import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const MCQ = () => {
   const [index, setIndex] = useState(0);
